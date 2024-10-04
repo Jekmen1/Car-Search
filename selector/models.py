@@ -10,3 +10,7 @@ class Model(models.Model):
 class CarType(models.Model):
     name = models.CharField(max_length=50)
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
+    release_start_year = models.IntegerField()
+    release_end_year = models.IntegerField()
+
+
